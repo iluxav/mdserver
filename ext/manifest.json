@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Markdown Renderer",
+  "version": "0.2.0",
+  "description": "Renders text/markdown responses as styled HTML, with MDX Editor on .md files.",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["marked.min.js", "content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_end",
+      "all_frames": false
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["editor-bundle.js", "editor-bundle.css"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

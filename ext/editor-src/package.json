@@ -1,0 +1,17 @@
+{
+  "name": "mdserver-editor",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "build": "esbuild index.jsx --bundle --format=iife --global-name=MDXEditorBundle --jsx=automatic --minify --outfile=../editor-bundle.js"
+  },
+  "dependencies": {
+    "@mdxeditor/editor": "^3.18.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "esbuild": "^0.24.0"
+  }
+}

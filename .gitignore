@@ -1,0 +1,8 @@
+/target
+Cargo.lock
+.remember/
+ext/editor-src/node_modules/
+CLAUDE.md
+.claude
+.remember
+docs/
